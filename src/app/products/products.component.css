@@ -1,0 +1,14 @@
+.productImage {
+    text-align: center;
+    vertical-align: middle;
+}
+.productImage img {
+    max-width: 90%;
+    max-height: 200px;
+}
+.productListing {
+    background-color: honeydew;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #408000;
+}

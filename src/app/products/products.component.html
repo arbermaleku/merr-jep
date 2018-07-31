@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-12">
+    Filter by: <input type="text" [(ngModel)]='filterBy'> {{ filterBy }}
+  </div>
+</div>
+<div class="row productListing" *ngFor="let p of myProducts">
+  <div class="col-md-4 productImage">
+    <div class="row">
+      <div class="col-sm-12"><img src="{{ p.pUrl }}" alt=""></div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="row">
+      <h2>{{ p.pTitle }}</h2>
+    </div>
+    <div class="row">
+      <p>{{ p.pDescription }}</p>
+    </div>
+    <div class="row float-right">
+        <button type="button" class="btn btn-outline-primary">View Details</button>
+        <button type="button" class="btn btn-outline-secondary">Edit</button>
+        <button type="button" class="btn btn-outline-success">Delete</button>
+    </div>
+  </div>
+</div>
+  
